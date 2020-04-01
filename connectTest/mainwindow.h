@@ -5,6 +5,7 @@
 #include <QtSql>
 #include <QSqlDatabase>
 #include <QMessageBox>
+#include <setsettings.h>
 
 
 QT_BEGIN_NAMESPACE
@@ -19,7 +20,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_toolButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+    setsettings *setting;
 };
 #endif // MAINWINDOW_H

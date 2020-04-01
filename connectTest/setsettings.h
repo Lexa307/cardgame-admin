@@ -18,10 +18,14 @@ public:
     ~setsettings();
 
 private slots:
-    void on_connect_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::setsettings *ui;
+
 };
 
 #endif // SETSETTINGS_H
